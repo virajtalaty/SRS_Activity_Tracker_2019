@@ -189,6 +189,10 @@ th {
   padding: 0;
 }
 
+div.only_time{
+	color: white;
+}
+
 div#top{
 	height: 210px;
 	width: 100%;
