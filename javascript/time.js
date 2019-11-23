@@ -15,8 +15,29 @@ function updateClock() {
 }
 updateClock();// initial call
 
-function updateValue() {
-   var step= '100'
-    document.getElementById('stepCount').innerHTML = step
+function updateRunningValue() {
+   var step= '400';
+   var calorie ='50';
+   var distance = '2';
+   document.getElementById('stepCount').innerHTML = step;
+   document.getElementById('calorieCount').innerHTML = calorie;
+   document.getElementById('distanceCovered').innerHTML = distance
+}
 
+function updateWalkingValue() {
+    var step= '500';
+    var calorie ='60';
+    var distance = '4';
+    document.getElementById('stepCount').innerHTML = step;
+    document.getElementById('calorieCount').innerHTML = calorie;
+    document.getElementById('distanceCovered').innerHTML = distance
+}
+
+function updateClimbingValue() {
+    var step= '200';
+    var calorie ='100';
+    var distance = '2.5';
+    document.getElementById('stepCount').innerHTML = step;
+    document.getElementById('calorieCount').innerHTML = calorie;
+    document.getElementById('distanceCovered').innerHTML = distance
 }

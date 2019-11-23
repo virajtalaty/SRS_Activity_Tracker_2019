@@ -51,15 +51,11 @@
     </div>
 </div>
     <div id="simulation">
-        <button id = "Walking"  style="background-color: #2e6da4">Walking</button>
-        <button id = "Running"style="background-color: #2e6da4">Running</button>
-        <button id = "Climbing"style="background-color: #2e6da4">Climbing</button>
+        <button id = "Walking"  style="background-color: #2e6da4" onclick="updateWalkingValue()">Walking</button>
+        <button id = "Running"style="background-color: #2e6da4" onclick="updateRunningValue()">Running</button>
+        <button id = "Climbing"style="background-color: #2e6da4" onclick="updateClimbingValue()">Climbing</button>
     </div>
 </div>
 </body>
 <script src="../javascript/time.js"></script>
-<script>
-    var step= '100'
-    document.getElementById('stepCount').innerHTML = step
-</script>
 </html>
