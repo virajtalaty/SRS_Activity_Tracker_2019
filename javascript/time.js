@@ -15,4 +15,10 @@ function updateClock() {
     // call this function again in 1000ms
     setTimeout(updateClock, 1000);
 }
-updateClock(); // initial call 
+updateClock();// initial call
+
+function updateValue() {
+   var step= '100'
+    document.getElementById('stepCount').innerHTML = step
+
+}

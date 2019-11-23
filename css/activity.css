@@ -230,6 +230,7 @@ div#head_header_right{
 	width: 50%;
 	float: right;
     color: white;
+   text-align: right;
 
 }
 div#head_footer_left{
@@ -242,8 +243,6 @@ div#head_footer_right{
 	width: 50%; 
 	float: left;
 }
-
-
 
 
 body#watch{
