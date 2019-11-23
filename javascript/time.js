@@ -1,18 +1,16 @@
 function openSettings(){  
-  parent.openSettings(); 
+	location.href = "./personalDetails.html";
+}
+
+function openActivity()
+{
+	location.href = "./activity_screen.html";
 }
 
 function updateClock() {
-    var now = new Date(), // current date
-        months = ['January', 'February', '...']; // you get the idea
-        time = now.getHours() + ':' + now.getMinutes(), // again, you get the idea
-
-        // a cleaner way than string concatenation
-
-    // set the content of the element with the ID time to the formatted string
+    var now = new Date();
+    time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds(),
     document.getElementById('time').innerHTML = [time].join(' / ');
-
-    // call this function again in 1000ms
     setTimeout(updateClock, 1000);
 }
 updateClock();// initial call
