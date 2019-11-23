@@ -1,9 +1,8 @@
 <html>
 <link rel="stylesheet" type="text/css" href="../css/activity.css">
 
-
-
-
+<script src='https://kit.fontawesome.com/a076d05399.js'>
+</script>
 
 <body id="watch">
 <div id="top">
@@ -13,6 +12,11 @@
 	<div id="activity_tracker_frame" >
 		<div id = "head_header" >
 			<div id="head_header_left" >
+				<i class='fas fa-heartbeat' style='font-size:52px;color:red'></i>
+				
+				<div style="float:right; color: white; font-size: 20px; margin-top:15px;">
+					70 BMP
+				</div>
 			</div>
 			<div id="head_header_right" style="background-color:black">
 				<input type="image" src="../images/settings.png" alt="Submit" style="max-height:52px; float: right" onclick="openSettings();">
@@ -28,12 +32,12 @@
 				<input type="image" src="../images/green.jpg" alt="Submit" style="float: right; width:28px; height:28px;margin-right:5px;" >
 			</div>
 			<div id = "head_footer_right" >
-				<input type="image" src="../images/white.png" alt="Submit" style="float: left; width:25px; height:25px;margin-left:10px;" >
+				<input type="image" src="../images/white.png" alt="Submit" style="float: left; width:25px; height:25px;margin-left:10px;" onclick="openActivity();">
 			</div>
 		</div>
 	</div>
 	<div id="simulation">
-		Simulation
+		
 	</div>
 </div>
 

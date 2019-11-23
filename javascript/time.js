@@ -1,5 +1,10 @@
 function openSettings(){  
-  parent.openSettings(); 
+	location.href = "./personalDetails.html";
+}
+
+function openActivity()
+{
+	location.href = "./activity_screen.html";
 }
 
 function updateClock() {
