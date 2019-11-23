@@ -7,6 +7,11 @@ function openActivity()
 	location.href = "./activity_screen.html";
 }
 
+function openMain()
+{
+	location.href = "./time_screen.html";
+}
+
 function updateClock() {
     var now = new Date();
     time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds(),
