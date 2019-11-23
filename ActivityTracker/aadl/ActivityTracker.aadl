@@ -1,0 +1,182 @@
+package ActivityTracker
+public
+	
+system ActivityTracker
+end ActivityTracker;
+
+system implementation ActivityTracker.with_devices
+	subcomponents
+		accelerometer: device Accelerometer;
+		heartRateSensor: device HeartRateSensor;
+		altimeter: device Altimeter;
+		gps: device GPS;
+		userInterface: device UserInterface;
+		activityTrackingSoftware: process ActivityTrackingSoftware.with_threads;	
+		data_bus:bus componentConnection.impl;
+		mainProcessor: processor MainProcessor.impl;
+	connections
+		userActivity_conn:port activityTrackingSoftware.activity_tracking_data -> userInterface.activity_tracking_result;
+		userInfo_conn: port userInterface.personal_info_out -> activityTrackingSoftware.user_data;
+		movement_conn: port  accelerometer.movement_detected -> activityTrackingSoftware.movement_in;
+		heartRate_conn: port heartRateSensor.heart_rate_detected -> activityTrackingSoftware.heart_rate_sensor_in;
+		altimeter_conn: port altimeter.altitude_detected -> activityTrackingSoftware.altimeter_in;
+		location_conn: port gps.location_detected -> activityTrackingSoftware.location_in;
+		
+		bus_movement: bus access data_bus -> accelerometer.bus_access;
+		bus_heartRate: bus access data_bus -> heartRateSensor.bus_access;
+		bus_altitude: bus access data_bus -> altimeter.bus_access;
+		bus_location: bus access data_bus -> gps.bus_access;
+		bus_processor: bus access data_bus -> mainProcessor.bus_access;
+		
+end ActivityTracker.with_devices;
+
+process ActivityTrackingSoftware
+	features
+		movement_in: in event port;
+		location_in: in event port;
+		heart_rate_sensor_in: in event port;
+		altimeter_in: in event port;
+		user_data: in event port;
+		activity_tracking_data: out event port;	
+end ActivityTrackingSoftware;
+
+process implementation ActivityTrackingSoftware.with_threads
+	subcomponents
+		thread_steps:thread stepCalculation.impl;
+		thread_heartRate: thread heartRateDetection.impl;
+		thread_calories: thread calorieCalculation.impl;
+		
+	connections
+		stepMovement_thread_conn: port movement_in -> thread_steps.movement_in;
+		stepLocation_thread_conn: port location_in -> thread_steps.location_in;
+		stepAltitude_thread_conn: port altimeter_in -> thread_steps.altimeter_in;
+		stepUserInfo_thread_conn: port user_data -> thread_steps.user_data;
+		stepActivity_thread_conn: port thread_steps.activity_tracking_data -> activity_tracking_data;
+		heartRate_thread_conn: port heart_rate_sensor_in -> thread_heartRate.heart_rate_sensor_in;
+		heartRateActivity_thread_conn: port thread_heartRate.activity_tracking_data -> activity_tracking_data;
+		calorieStep_thread_conn: port thread_steps.stepCount_out -> thread_calories.stepCount_in;
+		caloriesUserInfo_thread_conn: port user_data -> thread_calories.user_data;
+		calorieActivity_thread_conn: port thread_calories.activity_tracking_data -> activity_tracking_data;
+		
+	
+end ActivityTrackingSoftware.with_threads;
+
+
+thread stepCalculation 
+	features
+		movement_in :in event port;
+		location_in: in event port;
+		user_data: in event port;
+		altimeter_in: in event port;
+		activity_tracking_data: out event port;	
+		stepCount_out: out event port;
+end stepCalculation;
+
+thread heartRateDetection
+	features
+		heart_rate_sensor_in: in event port;
+		activity_tracking_data: out event port;		
+end heartRateDetection;
+
+thread calorieCalculation
+	features
+		stepCount_in: in event port;
+		user_data: in event port;
+		activity_tracking_data: out event port;	
+		
+end calorieCalculation;
+
+device Accelerometer
+	features
+		movement_detected: out event port;
+		bus_access: requires bus access componentConnection;
+end Accelerometer;
+	
+device implementation Accelerometer.impl
+	
+end Accelerometer.impl;
+
+device HeartRateSensor
+	features
+		heart_rate_detected: out event port;
+		bus_access: requires bus access componentConnection;
+	
+end HeartRateSensor;
+
+device implementation HeartRateSensor.impl
+	
+end HeartRateSensor.impl;
+
+device GPS
+	features
+		location_detected: out event port;
+		bus_access: requires bus access componentConnection;	
+end GPS;
+
+device implementation GPS.impl
+	
+end GPS.impl;
+
+device Altimeter
+	features
+		altitude_detected: out event port;
+		bus_access: requires bus access componentConnection;
+	
+end Altimeter;
+
+device implementation Altimeter.impl
+	
+end Altimeter.impl;
+
+device UserInterface
+	features
+		personal_info_out: out event port;
+		activity_tracking_result:in event port;			
+end UserInterface;
+
+device implementation UserInterface.impl
+	
+end UserInterface.impl;
+
+processor MainProcessor
+	features
+		bus_access: requires bus access componentConnection;
+		
+end MainProcessor;
+
+processor implementation MainProcessor.impl
+	subcomponents
+		ram:memory Ram;
+end MainProcessor.impl;
+
+memory Ram
+	
+end Ram;
+
+bus componentConnection
+	
+end componentConnection;
+
+bus implementation componentConnection.impl
+	
+end componentConnection.impl;
+
+
+
+thread implementation stepCalculation.impl
+		
+end stepCalculation.impl;
+
+
+
+thread implementation heartRateDetection.impl
+	
+end heartRateDetection.impl;
+
+
+
+thread implementation calorieCalculation.impl
+	
+end calorieCalculation.impl;
+
+end ActivityTracker;

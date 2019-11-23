@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="4d5850f8-0486-4884-88ff-758de696222f" manual="true">
+    <element uuid="7a3d3f49-80eb-40b9-a902-dabcacaa76fe" manual="true">
+      <element uuid="20bee82f-8bed-448c-9870-4500b09a70f5" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>movement_detected</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>accelerometer</seg>
+      </bo>
+      <position x="12.0" y="253.0"/>
+      <size width="450.0" height="60.0"/>
+    </element>
+    <element uuid="8b60c356-f0a5-4db5-bb8d-5d95556c07f2" manual="true">
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>activitytrackingsoftware</seg>
+      </bo>
+      <position x="175.0" y="38.0"/>
+      <size width="226.0" height="35.0"/>
+    </element>
+    <element uuid="02ba080b-01ee-48aa-91ba-88b71af66e27" manual="true">
+      <element uuid="05731992-8f75-4e63-858b-62e37ded5a2e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>altitude_detected</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>altimeter</seg>
+      </bo>
+      <position x="12.0" y="173.0"/>
+      <size width="377.0" height="60.0"/>
+    </element>
+    <element uuid="c66301ac-aacf-40fe-a622-267314e9ceb1" manual="true">
+      <element uuid="0523cbe6-2860-421e-b8c4-55d811f8a5cf" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>location_detected</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>gps</seg>
+      </bo>
+      <position x="12.0" y="93.0"/>
+      <size width="348.0" height="60.0"/>
+    </element>
+    <element uuid="3c3a7bc1-37d3-454e-870d-2bb475baec8c" manual="true">
+      <element uuid="b6014a92-fd66-4943-bead-6980f163d356" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>heart_rate_detected</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>heartratesensor</seg>
+      </bo>
+      <position x="12.0" y="333.0"/>
+      <size width="465.0" height="60.0"/>
+    </element>
+    <element uuid="98ae6bd0-52c0-4365-b4b1-6e98a440ad0e" manual="true">
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>userinterface</seg>
+      </bo>
+      <position x="12.0" y="38.0"/>
+      <size width="143.0" height="35.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>activitytracker.with_devices</seg>
+    </bo>
+    <position x="12.0" y="12.0"/>
+    <size width="489.0" height="405.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>activitytracker::activitytracker.with_devices</seg>
+    </context>
+  </config>
+</diagram:Diagram>
