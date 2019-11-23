@@ -228,7 +228,9 @@ div#head_header_left{
 div#head_header_right{
 	height: 100%;
 	width: 50%;
-	float: left;	
+	float: right;
+    color: white;
+
 }
 div#head_footer_left{
 	height: 100%;
@@ -6396,25 +6398,23 @@ button.close {
 #heartRate p{
   display: inline-block;
   vertical-align: top;
+  color: white;
 }
 
 #steps p {
   display: inline-block;
+  color: white;
 }
 
 #calorie p{
   display: inline-block;
-}
-
-#time p{
-  position:absolute;
-  top:0px;
-  right: 10px;
+  color: white;
 }
 
 #distance p{
   display: inline-block;
   align-content: center;
+  color: white;
 }
 
 
