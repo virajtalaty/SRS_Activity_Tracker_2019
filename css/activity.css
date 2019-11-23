@@ -6334,4 +6334,29 @@ button.close {
     display: none !important;
   }
 }
+#heartRate p{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#steps p {
+  display: inline-block;
+}
+
+#calorie p{
+  display: inline-block;
+}
+
+#time p{
+  position:absolute;
+  top:0px;
+  right: 10px;
+}
+
+#distance p{
+  display: inline-block;
+  align-content: center;
+}
+
+
 /*# sourceMappingURL=bootstrap.css.map */
