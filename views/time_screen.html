@@ -1,25 +1,36 @@
 <html>
 <link rel="stylesheet" type="text/css" href="../css/activity.css">
-<script src="../javascript/time.js"></script>
-<body>
-<div id="activity_tracker_frame">
-	<div id = "head_header" style="background-color:red">
-		<div id="head_header_left" style="background-color:blue">
+
+<body id="watch">
+<div id="top">
+
+</div>
+<div>
+	<div id="activity_tracker_frame" >
+		<div id = "head_header" >
+			<div id="head_header_left" >
+			</div>
+			<div id="head_header_right" style="background-color:black">
+				<input type="image" src="../images/settings.png" alt="Submit" style="min-height:100%; float: right" onclick="openSettings();">
+			</div>
 		</div>
-		<div id="head_header_right">
-			<input type="image" src="../images/settings.png" alt="Submit" style="min-height:100%;" onclick="openSettings();">
+		
+		<div id = "head_data" >
+			<div id="time"> </div>
+		</div>
+		
+		<div id = "head_footer" >
+			<div id = "head_footer_left" >
+			</div>
+			<div id = "head_footer_right" >
+			</div>
 		</div>
 	</div>
-	
-	<div id = "head_data" style="background-color:orange">
-	</div>
-	
-	<div id = "head_footer" style="background-color:red">
-		<div id = "head_footer_left" style="background-color:red">
-		</div>
-		<div id = "head_footer_right" style="background-color:yellow">
-		</div>
+	<div id="simulation">
+		Simulation
 	</div>
 </div>
+
 </body>
+<script src="../javascript/time.js"></script>
 </html>

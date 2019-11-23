@@ -189,15 +189,24 @@ th {
   padding: 0;
 }
 
+div#top{
+	height: 210px;
+	width: 100%;
+	display: block;
+}
 
 div#activity_tracker_frame{
-	height: 300px;
-	width: 200px; 
-	background-color: powderblue;
+	height: 320px;
+	width: 260px; 
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top:100px
+	margin-left: 640px;
+	float: left;
+}
+div#simulation{
+	width: 300px; 
+	height: 450px;
+	float: left;
+	margin-left: 100px;
 }
 div#head_header{
 	height: 20%;
@@ -230,6 +239,14 @@ div#head_footer_right{
 	height: 100%;
 	width: 50%; 
 	float: left;
+}
+
+body#watch{
+	background-image: url('../images/iWatch.png');  
+	height: 500px; /* You must set a specified height */
+	background-position: 600px 50px;
+	background-repeat: no-repeat; /* Do not repeat the image */
+  
 }
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
