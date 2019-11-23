@@ -44,6 +44,8 @@
 	    <label>Age: </label>
 	    <select class="form-control" id='age_selector'></select>
 	  </div>
+
+	  <button id="submit-btn" type="button" class="btn btn-success">Success</button>
 	</form>
 </div>
 
@@ -66,6 +68,10 @@
 	}
 	$('#age_selector').html(select);
 
+
+	document.getElementById("submit-btn").onclick = function () {
+        location.href = "./time_screen.html";
+    };
 </script>
 </body>
 </html>
