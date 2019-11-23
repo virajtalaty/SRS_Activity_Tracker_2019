@@ -1,0 +1,33 @@
+
+organization stakeholders
+stakeholder corp_ceo [
+	full name "Joe Bob"
+	title "CEO"
+	description "Joe is the CEO of the Treadmill Corp."
+	email "joe@treadmillcorp.com"
+	phone "515-295-5555"
+]
+stakeholder corp_safety [
+	full name "Roger Safety"
+	title "Safety Specialist"
+	description "Roger is in charge of safety of the treadmill system."
+	email "roger@treadmillcorp.com"
+	supervisor corp_ceo
+]
+stakeholder corp_security [
+	full name "Jeff Bozo"
+	title "IT Security Lead"
+	description "Jeff is in charge of corporate IT security and manages cloud storage for the treadmill system."
+	email "jeff@treadmillcorp.com"
+	supervisor corp_ceo
+]
+stakeholder user_professional [
+	full name "John Doe"
+	description "John is a treadmill user that primarily uses the treadmill for marathon training."
+	email "john.doe@gmail.com"
+]
+stakeholder user_hobby [
+	full name "Jane Doe"
+	description "Jane is a treadmill user that walks on the treadmill every day for exercise."
+	email "jane.doe@gmail.com"
+]

@@ -1,0 +1,15 @@
+Kind [
+	Assumption
+	Consistency
+	Constraint
+	Guarantee
+	Quality
+	Safety
+]
+
+Type [
+	Soft
+	Maintain
+	Achieve
+	Avoid
+]
