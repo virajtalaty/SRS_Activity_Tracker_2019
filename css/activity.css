@@ -226,6 +226,11 @@ div#head_data{
 	height: 65%;
 	width: 100%; 
 }
+
+div#head_data p{
+	font-size: 25px; 
+}
+
 div#head_footer{
 	height: 15%;
 	width: 100%; 
