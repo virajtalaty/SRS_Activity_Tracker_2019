@@ -3,17 +3,24 @@
 <head>
 	<title>Personal Details</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/activity.css">
+
 	<script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 </head>
-<body>
+
+<body id="watch">
+<div id="top">
+
+</div>
 
 <div>
+	<div id="activity_tracker_frame" >
 	
 	<p>User Details: </p>
-<div>
+	<div>
 	<form>
 	  <div class="form-group">
 	    <label >Height: </label>
@@ -47,8 +54,14 @@
 
 	  <button id="submit-btn" type="button" class="btn btn-success">Submit</button>
 	</form>
-</div>
+	</div>
+	</div>
 
+
+	<div id="simulation">
+		Simulation
+	</div>
+</div>
 <script type="text/javascript">
 	var select = '';
 	for (i=0;i<=300;i++){
