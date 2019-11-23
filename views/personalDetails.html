@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Details</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div>
+	
+	<p>User Details: </p>
+<!--	< form action="#">
+		  Weight:<br>
+		  	<select id="weight_selector"></select>
+			<br><br>
+		  Height:<br>
+		  	<select id='height_selector'></select>
+			<br><br>
+		  Gender:<br>
+		  	<input type="checkbox" name="male" value="M">M<br>
+			<input type="checkbox" name="female" value="F">F<br>
+		  <br><br>
+		  Age:<br>
+		  	<select id='age_selector'></select>
+			<br><br>
+		  <input type="submit" value="Submit">
+	</form> 
+
+</div> -->
+
+<div>
+	<form>
+	  <div class="form-group">
+	    <label >Height: </label>
+	    <select class="form-control" id='height_selector'></select>
+	  </div>
+
+	  <div class="form-group">
+	    <label>Weight: </label>
+	    <select class="form-control" id='weight_selector'></select>
+	  </div>
+	  
+	  <label>Gender: </label><br>
+		<div class="form-check">
+
+		  <input class="form-check-input" type="radio" name="exampleRadios" id="male" value="M" checked>
+		  <label class="form-check-label">
+		    Male
+	  	</label>
+		</div>
+	<div class="form-check">
+	  <input class="form-check-input" type="radio" name="exampleRadios" id="female" value="F">
+	  <label class="form-check-label">
+	    Female
+	  </label>
+	</div>
+
+	<div class="form-group">
+	    <label>Age: </label>
+	    <select class="form-control" id='age_selector'></select>
+	  </div>
+	</form>
+</div>
+
+<script type="text/javascript">
+	var select = '';
+	for (i=0;i<=300;i++){
+	    select += '<option val=' + i + '>' + i + '</option>';
+	}
+	$('#height_selector').html(select);
+
+	var select = '';
+	for (i=0;i<=1400;i++){
+	    select += '<option val=' + i + '>' + i + '</option>';
+	}
+	$('#weight_selector').html(select);
+
+	var select = '';
+	for (i=0;i<=130;i++){
+	    select += '<option val=' + i + '>' + i + '</option>';
+	}
+	$('#age_selector').html(select);
+
+</script>
+</body>
+</html>
