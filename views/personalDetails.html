@@ -19,40 +19,37 @@
 <div>
 	<div id="activity_tracker_frame" >
 	
-	<p>User Details: </p>
 	<div>
+		<span ><center style="color: white;">User Details: </center></span>
 	<form>
 	  <div class="form-group">
-	    <label >Height: </label>
+	    <label style="color: white;">Height: </label>
 	    <select class="form-control" id='height_selector'></select>
 	  </div>
 
 	  <div class="form-group">
-	    <label>Weight: </label>
+	    <label style="color: white;">Weight: </label>
 	    <select class="form-control" id='weight_selector'></select>
 	  </div>
 	  
-	  <label>Gender: </label><br>
-		<div class="form-check">
-
-		  <input class="form-check-input" type="radio" name="exampleRadios" id="male" value="M" checked>
-		  <label class="form-check-label">
-		    Male
-	  	</label>
+	  <label style="color: white;">Gender: </label>
+		
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="margin-left: 10px;" checked>
+		  <label class="form-check-label" for="inlineRadio1" style="color: white;">Male</label>
 		</div>
-	<div class="form-check">
-	  <input class="form-check-input" type="radio" name="exampleRadios" id="female" value="F">
-	  <label class="form-check-label">
-	    Female
-	  </label>
-	</div>
+		<div class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2" style="color: white;">Female</label>
+		</div>
+		
 
 	<div class="form-group">
-	    <label>Age: </label>
+	    <label style="color: white;">Age: </label>
 	    <select class="form-control" id='age_selector'></select>
 	  </div>
 
-	  <button id="submit-btn" type="button" class="btn btn-success">Submit</button>
+	  <center><button id="submit-btn" type="button" class="btn btn-success">Submit</button></center>
 	</form>
 	</div>
 	</div>
