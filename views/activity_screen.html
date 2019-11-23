@@ -1,14 +1,19 @@
 <html>
 <link rel="stylesheet" type="text/css" href="../css/activity.css">
 <script src="../javascript/time.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'>
+</script>
+
 <body>
 <div id="activity_tracker_frame">
     <div id = "head_header" style="background-color:red">
-        <div id="head_header_left" style="background-color:blue">
-
+        <div id="head_header_left" style="background-color:burlywood">
+            <i class="fas fa-running" style='font-size:34px;'></i>
         </div>
         <div id="head_header_right">
-            <p id="datetime"> 1: 30 </p>
+            <p> date
+                <span id="datetime"></span>
+            </p>
         </div>
     </div>
 
@@ -43,4 +48,8 @@
     </div>
 </div>
 </body>
+<script>
+    let dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
 </html>

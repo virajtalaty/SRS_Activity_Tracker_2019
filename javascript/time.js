@@ -1,3 +1,3 @@
-function openSettings(){  
-  parent.openSettings(); 
-} 
+function openSettings(){
+  parent.openSettings();
+}
