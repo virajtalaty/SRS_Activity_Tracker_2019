@@ -1,33 +1,59 @@
 
 organization stakeholders
-stakeholder corp_ceo [
-	full name "Joe Bob"
+stakeholder activity_ceo [
+	full name "Kurt Diaz"
 	title "CEO"
-	description "Joe is the CEO of the Treadmill Corp."
-	email "joe@treadmillcorp.com"
-	phone "515-295-5555"
+	description "Kurt is the CEO of the Activity Tracker."
+	email "kurt@activitytracker.com"
 ]
-stakeholder corp_safety [
-	full name "Roger Safety"
-	title "Safety Specialist"
-	description "Roger is in charge of safety of the treadmill system."
-	email "roger@treadmillcorp.com"
-	supervisor corp_ceo
+stakeholder engineer_electical [
+	full name "Fern Rodriguez"
+	title "Senior Electrical Engineer"
+	description "Fern is an electrical engineer."
+	email "fern@activitytracker.com"
+	supervisor activity_ceo
 ]
-stakeholder corp_security [
-	full name "Jeff Bozo"
-	title "IT Security Lead"
-	description "Jeff is in charge of corporate IT security and manages cloud storage for the treadmill system."
-	email "jeff@treadmillcorp.com"
-	supervisor corp_ceo
+stakeholder thermal_electical [
+	full name "Zara Thomas"
+	title "Senior thermal Engineer"
+	description "Zara is an thermal engineer."
+	email "zara@activitytracker.com"
+	supervisor activity_ceo
 ]
-stakeholder user_professional [
-	full name "John Doe"
-	description "John is a treadmill user that primarily uses the treadmill for marathon training."
+stakeholder software_electical [
+	full name "Jonah Cruz"
+	title "Senior Software Engineer"
+	description "Jonah is an software engineer."
+	email "jonah@activitytracker.com"
+	supervisor activity_ceo
+]
+stakeholder user_professional_1 [
+	full name "Gina Malone"
+	title "Device User"
+	description "Gina is a user going to make use of the Activity Tracker."
+	email "gina@gamil.com"
+]
+stakeholder user_professional_2 [
+	full name "Nelson Carroll"
+	title "Device User"
+	description "Nelson is a user going to make use of the Activity Tracker."
+	email "nelson@gamil.com"
+]
+stakeholder watch_company_professional [
+	full name "Nicci Kumar"
+	title "Fossil Company Representative"
+	description "Nicci is from the fossil wristwatch company who will provide information on the design and the working of an actual wristwatch."
+	email "nicci@fossil.com"
+]
+stakeholder fitness_enthusiast_1 [
+	full name "John Rivera"
+	title "Fitness Enthusiast"
+	description "John is a fitness enthusiast who will provide details about what all activity information necessary to be displayed."
 	email "john.doe@gmail.com"
 ]
-stakeholder user_hobby [
+stakeholder fitness_enthusiast_2 [
 	full name "Jane Doe"
-	description "Jane is a treadmill user that walks on the treadmill every day for exercise."
+	title "Fitness Enthusiast"
+	description "Jane is a fitness enthusiast who will provide details about what all activity information necessary to be displayed."
 	email "jane.doe@gmail.com"
 ]
