@@ -1,0 +1,78 @@
+
+stakeholder goals StakeholderGoals : "Activity tracker stakeholder goal set" for system [
+	description "This contains the goal set for the Activity Tracking System."
+	goal g1 : "Display users activity information" [
+		description "The activity tracker should display the information about the users activity."
+		stakeholder stakeholders.fitness_enthusiast_1 stakeholders.user_professional_1 stakeholders.activity_ceo stakeholders.fitness_enthusiast_2 stakeholders.user_professional_2
+		category Type.Achieve
+	]
+	
+			goal g1_1: "Display Distance Covered" [
+			description "The distance covered by the user in a day while performing the activities should be displayed"
+			category Type.Maintain
+			refines g1
+			see goal goaldoc_11.g1_1
+			]
+			
+			goal g1_2: "Display Calories" [
+			description "The calories burnt  by the user in a day while performing the activities should be displayed"
+			category Type.Maintain
+			refines g1
+			see goal goaldoc_12.g1_2
+			]
+			
+			goal g1_3: "Display Step Count" [
+			description "The steps covered by the user in a day while performing the activities should be displayed"
+			category Type.Maintain
+			refines g1
+			see goal goaldoc_13.g1_3
+			]
+			
+			goal g1_4: "Display Type of Movement" [
+			description "The type of movement performed by the user should be displayed"
+			category Type.Maintain
+			refines g1
+			]
+			
+			goal g1_5: "Display Time" [
+			description "The current time shall be displayed by the watch"
+			category Type.Achieve
+			refines g1
+			]
+			
+			goal g1_6: "Display Heart Rate Information" [
+			description "The heart rate of the user should be displayed"
+			category Type.Maintain
+			refines g1
+			see goal goaldoc_16.g1_6
+			]
+		
+	
+	
+	goal g2: "Effective monitoring of user activity" [
+		description "The activity tracker should effectively monitor the user's activity."
+		stakeholder stakeholders.activity_ceo stakeholders.engineer_electical stakeholders.thermal_electical stakeholders.software_electical
+		category Type.Soft
+	]
+		goal g2_1:"Accurate display of users activity"[
+			description "The display of the user’s activity should be as accurate as possible."
+			category Type.Soft
+			refines g2
+			see goal goaldoc_21.g2_1
+		]
+		
+		goal g2_2:"Ease of Use"[
+			description "The user should be able to use the system-to-be with ease. The user should easily see all the activity results"
+			category Type.Soft
+			refines g2	
+			see goal goaldoc_22.g2_2	
+		]
+		
+		goal g2_3:"Safe Usage"[
+			description "The usage of the watch should be safe and should not harm the user in any manner."
+			category Type.Soft	
+			refines g2	
+			see goal goaldoc_23.g2_3	
+		]
+	
+]

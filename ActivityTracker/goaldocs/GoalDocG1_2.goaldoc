@@ -1,0 +1,26 @@
+document goaldoc_12 : "Calorie Count Refinement Goals"[
+	goal g1_2: "Display Calories" [
+			description "The calories burnt  by the user in a day while performing the activities should be displayed"
+			stakeholder stakeholders.fitness_enthusiast_1 stakeholders.user_professional_1 stakeholders.activity_ceo stakeholders.fitness_enthusiast_2 stakeholders.user_professional_2
+			category Type.Maintain		
+			]
+			
+			goal g1_2_1: "Calculate Calories"[
+				description "Calculate the calories burnt by the user while performing the activities."
+				category Type.Achieve
+				refines g1_2				
+			]
+			
+				goal g1_2_1_1: "Get User Information"[
+					description "The personal information about the user shall be retrieved."
+					category Type.Achieve
+					refines g1_2_1
+				]
+				
+				goal g1_2_1_2: "Classify type of movement"[
+					description "The type of movement performed by the user shall be classified"
+					category Type.Achieve
+					refines g1_2_1
+				]			
+	
+]

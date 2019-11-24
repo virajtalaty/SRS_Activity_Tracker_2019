@@ -1,0 +1,14 @@
+document goaldoc_11 : "Distance Covered Refinement Goals"[
+	goal g1_1: "Display Distance Covered" [
+		description "The distance covered by the user in a day while performing the activities should be displayed"
+		stakeholder stakeholders.fitness_enthusiast_1 stakeholders.user_professional_1 stakeholders.activity_ceo stakeholders.fitness_enthusiast_2 stakeholders.user_professional_2
+		category Type.Maintain
+		
+		]
+		
+			goal g1_1_1:"Calculate Distance Covered"[
+			description "Calculate the distance covered by the user while performing the activity"
+			category Type.Achieve
+			refines g1_1
+			]				
+]

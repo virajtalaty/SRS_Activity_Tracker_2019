@@ -1,0 +1,13 @@
+document goaldoc_13 : "Step Count Refinement Goals"[
+	goal g1_3: "Display Step Count" [
+			description "The steps covered by the user in a day while performing the activities should be displayed"
+			stakeholder stakeholders.fitness_enthusiast_1 stakeholders.user_professional_1 stakeholders.activity_ceo stakeholders.fitness_enthusiast_2 stakeholders.user_professional_2
+			category Type.Maintain
+			]
+			
+				goal g1_3_1: "Calculate step Count"[
+					description  "Calculate the steps count by the user while performing the activities."
+					category Type.Achieve	
+					refines g1_3		
+				]	
+]

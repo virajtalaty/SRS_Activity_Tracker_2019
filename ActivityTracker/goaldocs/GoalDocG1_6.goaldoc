@@ -1,0 +1,14 @@
+document goaldoc_16 : "Heart RateRefinement Goals"[
+	goal g1_6: "Display Heart Rate Information" [
+			description "The heart rate of the user should be displayed"
+			stakeholder stakeholders.fitness_enthusiast_1 stakeholders.user_professional_1 stakeholders.activity_ceo stakeholders.fitness_enthusiast_2 stakeholders.user_professional_2
+			category Type.Maintain
+			]
+			
+				goal g1_6_1:"Monitor heart beat rate"[
+					description "The heart rate of the user shall be monitored always."
+					category Type.Maintain
+					refines g1_6
+				]
+						
+]

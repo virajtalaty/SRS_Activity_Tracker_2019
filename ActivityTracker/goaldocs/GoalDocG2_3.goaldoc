@@ -1,0 +1,21 @@
+document goaldoc_23 : "Ease of Usage Refinement"[
+	goal g2_3:"Safe Usage"[
+			description "The usage of the watch should be safe and should not harm the user in any manner."
+			stakeholder stakeholders.activity_ceo stakeholders.engineer_electical stakeholders.thermal_electical stakeholders.software_electical
+			category Type.Soft		
+		]
+		
+		goal g2_3_1: "Stop when over heated" [
+			description "The device shall stop functioning in the case of overheating."
+			category Type.Soft
+			refines g2_3
+		]
+		
+		goal g2_3_2: "Reduce Electro-magnetic current"[
+			description "The user should not experience any electro-magnetic current if the watch malfunctions."
+			category Type.Soft
+			refines g2_3
+		]
+		
+	
+]

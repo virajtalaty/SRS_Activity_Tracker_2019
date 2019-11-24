@@ -1,0 +1,15 @@
+document goaldoc_21 : "User Activity Display Refinement"[
+	goal g2_1:"Accurate display of users activity"[
+			description "The display of the user’s activity should be as accurate as possible."
+			stakeholder stakeholders.activity_ceo stakeholders.engineer_electical stakeholders.thermal_electical stakeholders.software_electical
+			category Type.Soft
+		]
+		
+			goal g2_1_1: "Notify when heart rate out of range"[
+			description "The activity tracker is supposed to notify the user effectively if the heart rate is out of range of desired range"
+			category Type.Soft
+			refines g2_1
+			]
+				
+	
+]
