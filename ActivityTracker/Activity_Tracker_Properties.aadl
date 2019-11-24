@@ -1,0 +1,3 @@
+property set Activity_Tracker_Properties is
+	Accelerometer_Change_Rate_Units: type units (GravitationalForce);
+end Activity_Tracker_Properties;
