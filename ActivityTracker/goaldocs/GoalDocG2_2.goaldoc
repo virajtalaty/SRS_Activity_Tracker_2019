@@ -1,0 +1,28 @@
+document goaldoc_22 : "Ease of Usage Refinement"[
+	goal g2_2:"Ease of Use"[
+			description "The user should be able to use the system-to-be with ease. The user should easily see all the activity results"
+			stakeholder stakeholders.activity_ceo stakeholders.engineer_electical stakeholders.thermal_electical stakeholders.software_electical
+			category Type.Soft	
+		]
+		
+			goal g2_2_1:"Comprehensive display of all activities"[
+			description "The user can view all the user activity statistics in a compact and simple manner."
+			category Type.Soft
+			refines g2_2			
+			]
+			
+			goal g2_2_2:"Simple gathering of user input"[
+			description "The user shall easily be able to provide the personal information."
+			category Type.Soft
+			refines g2_2			
+			]
+			
+			goal g2_2_3:"Continual Display of user’s activity"[
+			description "The user will be displayed with the result of the activity statistics continuously throughout the day."
+			category Type.Soft
+			refines g2_2			
+			]
+			
+			
+			
+]
