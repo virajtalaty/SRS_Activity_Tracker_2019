@@ -1,6 +1,10 @@
 property set Activity_Tracker_Properties is
 	Accelerometer_Units: type units (GravitationalForce); -- G
 	Acceleration_Value: type aadlreal units Activity_Tracker_Properties::Accelerometer_Units; --<Number> G
+	
+	
+	
+	
 	Acceleration_Accuracy: Activity_Tracker_Properties::Acceleration_Value applies to (all); --0.1 G
 	
 end Activity_Tracker_Properties;
