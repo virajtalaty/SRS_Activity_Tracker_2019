@@ -1,0 +1,26 @@
+--iso_variables.aadl
+
+--data components used to type data connections in isolette model
+
+
+package ActivityTracker_variables
+  public
+	with Data_Model;
+	with Activity_Tracker_Properties;
+
+--Table 1 Accelerometer Monitored Variable
+	data measured_acceleration
+		properties
+			Data_Model::Real_Range => 68.0 .. 105.0;
+			Data_Model::Measurement_Unit => "Gravitational Force";
+			Activity_Tracker_Properties::Acceleration_Accuracy => 0.1 GravitationalForce;
+	end measured_acceleration;
+	
+	data display_acceleration
+		properties
+			Data_Model::Real_Range => 68.0 .. 105.0;
+			Data_Model::Measurement_Unit => "Gravitational Force";
+			Activity_Tracker_Properties::Acceleration_Accuracy => 0.1 GravitationalForce;
+	end display_acceleration;
+	
+end ActivityTracker_variables;  
