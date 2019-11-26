@@ -1,0 +1,24 @@
+system requirements Accelerometer for ActivityTracker::UserInterface 
+use constants activityTrackerConstant [
+	
+	// Functional Requirement to Calculate Step Count
+	requirement FR_UI1 [
+		description "The user interface shall accept the input values from the user such as age, weight, height and gender." 
+		rationale "The activity tracker is expected to receive the above inputs from the user in order to calculate the activity results of the user. The user should be provided with a placeholder to provide each of these input values respectively."
+ 		category Kind.Constraint
+	]
+	requirement FR_UI2 [
+		description "The user display shall have an independent function to display the calculated results of the user’s activity." 
+		rationale "The calculated results of user’s activity will be displayed by the user interface to provide the user with information about different activities. There are several different values which is provided to the user such as:
+					•	The value of steps count is provided as Display steps. •	The value of distance covered is provided as Display distance.
+					•	The value of calories burnt is provided as Display calories burnt. •	The value of heart rate is provided as Display heart rate.
+					•	The value of type of movement type is provided as Display movement type.
+					All the values should be consistent with the desired value type and provided to the user in a readable format."
+ 		category Kind.Constraint
+	]
+	requirement FR_UI3 [
+		description "The user interface should have an independent function to pass the values of the input variables to the activity tracker software." 
+		rationale "The input values regarding the user’s personal information needs to be transferred to the activity tracking software. The activity tracking software will combine this information along with the results returned from the the different sensors to calculate the user’s activity."
+ 		category Kind.Constraint
+	]
+]
