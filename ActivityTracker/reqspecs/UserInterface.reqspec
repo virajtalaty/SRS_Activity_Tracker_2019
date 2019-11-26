@@ -1,5 +1,5 @@
 system requirements Accelerometer for ActivityTracker::UserInterface 
-use constants activityTrackerConstant [
+[
 	
 	// Functional Requirement to Calculate Step Count
 	requirement FR_UI1 [

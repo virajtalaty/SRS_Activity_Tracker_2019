@@ -1,5 +1,5 @@
 system requirements Accelerometer for ActivityTracker::ActivityTrackingSoftware 
-use constants activityTrackerConstant [
+[
 	// Functional Requirement to Calculate Distance Traveled
 	requirement REQ_CDTV_1 [
 		description "Calculate distance covered function shall read the values from the GPS." 

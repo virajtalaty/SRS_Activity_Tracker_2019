@@ -1,5 +1,5 @@
 system requirements Accelerometer for ActivityTracker::ActivityTracker.with_devices 
-use constants activityTrackerConstant [
+[
 	requirement NF_SR_1 [
 		description "The material used to make the activity tracker should be so that it is able to absorb vibration and shocks." 
 		rationale "The EN (European Standards) standards are the safety standards globally accepted. They defined the safety guidelines and suggest designs. The activity tracker should be designed as per the specified standards."
