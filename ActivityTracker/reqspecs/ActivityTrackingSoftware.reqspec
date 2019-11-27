@@ -6,7 +6,6 @@ system requirements Accelerometer for ActivityTracker::ActivityTrackingSoftware
 		rationale "When the user is traveling from point A to point B the GPS will capture the value of the user’s location. 
 					The activity tracker software will read these values from the GPS every second to be used for calculating various results."
  		category Kind.Constraint
- 		see goal goaldoc_11.g1_1
 	]
 	requirement REQ_CDTV_2 [
 		description "Calculate distance covered function shall read the state of the accelerometer." 
@@ -19,11 +18,13 @@ system requirements Accelerometer for ActivityTracker::ActivityTrackingSoftware
 		rationale "The activity tracker software will have the values from the GPS showing at which location the user started performing an activity
 					 and which position the user stopped performing the activity. This information will be used to calculate the distance travelled by the user. This result will be added to the previous values of the distance travelled to show the user the consolidated value of how much distance the user has travelled in a day."
  		category Kind.Constraint
+ 		see goal goaldoc_11.g1_1_1
 	]
 	requirement REQ_CDTV_4 [
 		description "The calculated distance covered function shall provide these values to the user interface to display the information." 
 		rationale "The consolidated result of how much distance the user has travelled will be transferred to the user interface."
  		category Kind.Constraint
+ 		see goal goaldoc_11.g1_1
 	]
 	
 	// Functional Requirement to Classify Type of Movement

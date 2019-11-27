@@ -1,7 +1,7 @@
 document goaldoc_21 : "User Activity Display Refinement"[
 	goal g2_1:"Accurate display of users activity"[
 			description "The display of the user’s activity should be as accurate as possible."
-			stakeholder stakeholders.activity_ceo stakeholders.engineer_electical stakeholders.thermal_electical stakeholders.software_electical
+			stakeholder stakeholders.activity_ceo stakeholders.electrical_engineer stakeholders.thermal_engineer stakeholders.software_engineer
 			category Type.Soft
 		]
 		

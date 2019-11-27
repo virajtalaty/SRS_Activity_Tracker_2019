@@ -1,7 +1,7 @@
 document goaldoc_23 : "Ease of Usage Refinement"[
 	goal g2_3:"Safe Usage"[
 			description "The usage of the watch should be safe and should not harm the user in any manner."
-			stakeholder stakeholders.activity_ceo stakeholders.engineer_electical stakeholders.thermal_electical stakeholders.software_electical
+			stakeholder stakeholders.activity_ceo stakeholders.electrical_engineer stakeholders.thermal_engineer stakeholders.software_engineer
 			category Type.Soft		
 		]
 		

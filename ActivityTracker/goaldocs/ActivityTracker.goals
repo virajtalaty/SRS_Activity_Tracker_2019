@@ -51,7 +51,7 @@ stakeholder goals StakeholderGoals : "Activity tracker stakeholder goal set" for
 	
 	goal g2: "Effective monitoring of user activity" [
 		description "The activity tracker should effectively monitor the user's activity."
-		stakeholder stakeholders.activity_ceo stakeholders.engineer_electical stakeholders.thermal_electical stakeholders.software_electical
+		stakeholder stakeholders.activity_ceo stakeholders.electrical_engineer stakeholders.thermal_engineer stakeholders.software_engineer
 		category Type.Soft
 	]
 		goal g2_1:"Accurate display of users activity"[
