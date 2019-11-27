@@ -3,7 +3,7 @@
 
 <script src='https://kit.fontawesome.com/a076d05399.js'>
 </script>
-<body id="watch">
+<body id="watch" onload="updateDetails()">
 <div id="top">
 
 </div>
@@ -11,7 +11,7 @@
 <div id="activity_tracker_frame">
     <div id = "head_header">
         <div id="head_header_left" >
-            <i class="fas fa-running" style='font-size:34px;color:white'></i>
+            <i id="manIcon" class="fas fa-walking" style='font-size:34px;color:white'></i>
         </div>
         <div id="head_header_right">
             <p>
@@ -27,8 +27,8 @@
         </div>
 
         <div id ="calorie" align="center">
-            <p id="calorieCount">0.0</p>
-            <p id="calorieUnit">kCal</p>
+            <p id="calorieCount">0</p>
+            <p id="calorieUnit">Cal</p>
         </div>
 
         <div id ="distance" align="center">
@@ -39,7 +39,7 @@
         <div id = "heartRate" align="center">
             <p id = "heartRateValue">70</p>
             <p id = "heartRateUnit">BMP</p>
-            <i class='fas fa-heartbeat' style='font-size:24px;color:red'></i>
+			<input type="image" src="../images/tenor.gif" style="width:40px; height:40px;" >
         </div>
     </div>
 
@@ -53,11 +53,21 @@
 		</div>
 </div>
     <div id="simulation">
-        <button id = "Walking"  style="background-color: #2e6da4" onclick="updateWalkingValue()">Walking</button>
-        <button id = "Running"style="background-color: #2e6da4" onclick="updateRunningValue()">Running</button>
-        <button id = "Climbing"style="background-color: #2e6da4" onclick="updateClimbingValue()">Climbing</button>
+        <button id = "Walking" class="actions" onclick="updateWalkingValue()">Walking</button>
+        <button id = "Running" class="actions" onclick="updateRunningValue()">Running</button>
+        <button id = "Climbing" class="actions" onclick="updateClimbingValue()">Climbing</button>
+		<button id = "Heart Alert" class="actions" onclick="openHeartAlert()">Heart Alert</button>
     </div>
 </div>
+
+<div id="floating_alert">
+	<br>
+	<br>
+	<b> Heart Rate Alert</b><br><br>
+	Heart Rate above normal rate.<br><br>
+	<button id = "AlertHeartRate" style="background-color: #2e6da4" onclick="closeHeartAlert()">Ok</button>
+</div>
+
 </body>
 <script src="../javascript/time.js"></script>
 </html>

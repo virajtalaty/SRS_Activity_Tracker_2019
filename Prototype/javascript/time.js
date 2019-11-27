@@ -1,3 +1,17 @@
+updateClock();// initial call
+
+var initialSteps = 0;
+var initialKcal = 0;
+var initialMiles = 0;
+var initialHeart = 70;
+
+var stepIncrement = 0;
+var kcalIncrement = 0;
+var milesIncrement = 0;
+var heartIncrement = 0;
+var finalHeart = 70;
+
+
 function openSettings(){  
 	location.href = "./personalDetails.html";
 }
@@ -18,38 +32,72 @@ function updateClock() {
     document.getElementById('time').innerHTML = [time].join(' / ');
     setTimeout(updateClock, 1000);
 }
-updateClock();// initial call
+
+
+
+function openHeartAlert(){
+	document.getElementById("floating_alert").style.visibility = "visible";
+}
+
+function closeHeartAlert(){
+	document.getElementById("floating_alert").style.visibility = "hidden";
+}
+
+
+function updateDetails() {
+	
+	
+	document.getElementById('stepCount').innerHTML = initialSteps;
+	document.getElementById('calorieCount').innerHTML = initialKcal;
+	document.getElementById('distanceCovered').innerHTML = initialMiles;
+	document.getElementById('heartRateValue').innerHTML = initialHeart;
+	
+	initialSteps += stepIncrement
+	initialSteps = Math.round(initialSteps * 100) / 100; 
+	
+	initialKcal += kcalIncrement
+	initialKcal = Math.round(initialKcal * 100) / 100; 
+	
+	initialMiles += milesIncrement
+	initialMiles = Math.round(initialMiles * 100) / 100; 
+	 
+	if(initialHeart<finalHeart)
+	{
+		initialHeart+=heartIncrement;
+	}
+	if(finalHeart<initialHeart)
+	{
+		initialHeart-=heartIncrement;
+	}
+	
+	setTimeout(updateDetails, 1000);
+    
+}
 
 function updateRunningValue() {
-   var step= '400';
-   var calorie ='50';
-   var distance = '2';
-   var heartRate = '170';
-   
-   document.getElementById('stepCount').innerHTML = step;
-   document.getElementById('calorieCount').innerHTML = calorie;
-   document.getElementById('distanceCovered').innerHTML = distance;
-   document.getElementById('heartRateValue').innerHTML = heartRate;
+	stepIncrement = 5;
+	kcalIncrement = 3;
+	milesIncrement = 0.2;
+	finalHeart = 190;
+	heartIncrement = 5;
+	document.getElementById('manIcon').className = "fas fa-running";
 }
 
 function updateWalkingValue() {
-    var step= '500';
-    var calorie ='60';
-    var distance = '4';
-	var heartRate = '100';
-    document.getElementById('stepCount').innerHTML = step;
-    document.getElementById('calorieCount').innerHTML = calorie;
-    document.getElementById('distanceCovered').innerHTML = distance;
-	document.getElementById('heartRateValue').innerHTML = heartRate;
+    
+	stepIncrement = 1;
+	kcalIncrement = 1;
+	milesIncrement = 0.05;
+	finalHeart = 100;
+	heartIncrement = 2;
+	document.getElementById('manIcon').className = "fas fa-walking";
 }
 
 function updateClimbingValue() {
-    var step= '200';
-    var calorie ='100';
-    var distance = '2.5';
-	var heartRate = '190';
-    document.getElementById('stepCount').innerHTML = step;
-    document.getElementById('calorieCount').innerHTML = calorie;
-    document.getElementById('distanceCovered').innerHTML = distance;
-	document.getElementById('heartRateValue').innerHTML = heartRate;
+    stepIncrement = 3;
+	kcalIncrement = 2;
+	milesIncrement = 0.1;
+	finalHeart = 170;
+	heartIncrement = 3;
+	document.getElementById('manIcon').className = "fas fa-hiking";
 }
