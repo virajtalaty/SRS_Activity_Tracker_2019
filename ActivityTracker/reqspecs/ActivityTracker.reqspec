@@ -1,4 +1,4 @@
-system requirements Accelerometer for ActivityTracker::ActivityTracker.with_devices 
+system requirements ActivityTracker for ActivityTracker::ActivityTracker.with_devices 
 [
 	requirement NF_SR_1 [
 		description "The material used to make the activity tracker should be so that it is able to absorb vibration and shocks." 

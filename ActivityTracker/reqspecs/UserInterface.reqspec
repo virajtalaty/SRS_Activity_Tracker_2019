@@ -1,4 +1,4 @@
-system requirements Accelerometer for ActivityTracker::UserInterface 
+system requirements UserInterface for ActivityTracker::UserInterface 
 [
 	
 	// Functional Requirement to Calculate Step Count
