@@ -1,5 +1,292 @@
 <?xml version="1.0" encoding="ASCII"?>
 <diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="afa2fb96-2ec7-4dfc-b600-88d1cb803c2d" manual="true">
+    <element uuid="e76aec67-419f-4ec5-bcbe-140cd246b286" manual="true">
+      <element uuid="09c9fcee-d10c-4933-a514-209e18bb3156" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>calorieactivity_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="0b812248-8264-466e-9afb-81dd7d97ddf1" manual="true">
+      <element uuid="71749b4c-a005-40cf-88d3-4b8656f16b14" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>caloriestep_thread_conn</seg>
+      </bo>
+      <bendpoints>
+        <point x="675.0" y="258.33333333333337"/>
+        <point x="675.0" y="222.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="f9d57d52-58e7-4be0-a5a3-960d41da23d2" manual="true">
+      <element uuid="f1d2adc6-3441-4cf3-b91f-7079145dd138" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>caloriesuserinfo_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="0dd1e0ee-a76e-49dc-a27d-28ebf72a7631" manual="true">
+      <element uuid="59701c37-a308-4cae-a920-4879143cc71c" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>heartrate_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="7cc9d6e3-4425-4270-b82d-09466e4fa351" manual="true">
+      <element uuid="9a88b48b-ed01-4fa1-b596-b0b7ac65939d" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>heartrateactivity_thread_conn</seg>
+      </bo>
+      <bendpoints>
+        <point x="1193.0" y="92.0"/>
+        <point x="1193.0" y="197.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="7e46fd85-2599-47c4-878b-7b52d4d2e806" manual="true">
+      <element uuid="be14abf0-02e2-4880-a547-50ca6fe0c49c" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>stepactivity_thread_conn</seg>
+      </bo>
+      <bendpoints>
+        <point x="1193.0" y="341.6666666666667"/>
+        <point x="1193.0" y="197.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="08000408-ace2-49ec-8ab0-c8f27c55a358" manual="true">
+      <element uuid="4ca28548-2ae4-41f8-95f9-7caeda548529" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>stepaltitude_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="d65271bb-9c24-4ad8-a287-09c576bb0e9e" manual="true">
+      <element uuid="f79a9ce5-181c-4a42-9dde-638f6e4250e8" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>steplocation_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="efd81bfe-0cd3-45ed-9b39-5a9ff1dc7196" manual="true">
+      <element uuid="3d7ccac6-2812-41d4-8b27-5cb839637488" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>stepmovement_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="a55bf5da-0f75-4e27-9a6b-eb368e1a79af" manual="true">
+      <element uuid="c144a3ed-32b0-4bc9-a77e-aa3c059f7d39" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>stepuserinfo_thread_conn</seg>
+      </bo>
+      <bendpoints>
+        <point x="189.0" y="172.0"/>
+        <point x="189.0" y="225.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="83cb5729-0167-48db-93a5-975544c83048" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>activity_tracking_data</seg>
+      </bo>
+      <position x="1203.0" y="153.0"/>
+    </element>
+    <element uuid="9cfdef86-b9ec-4805-ae51-cf95995ada3d" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>altimeter_in</seg>
+      </bo>
+      <position y="231.0"/>
+    </element>
+    <element uuid="0e02785b-886c-4f85-aa42-ae3a846bdcf5" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>heart_rate_sensor_in</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="5a3382bc-40a7-40cc-8e8b-987ea97bd474" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>location_in</seg>
+      </bo>
+      <position y="281.0"/>
+    </element>
+    <element uuid="98c88776-6c0d-470e-9608-b4efaa4a0e5b" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>movement_in</seg>
+      </bo>
+      <position y="331.0"/>
+    </element>
+    <element uuid="5115fdff-9d75-4687-9f0d-7618265d6bf7" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>user_data</seg>
+      </bo>
+      <position y="128.0"/>
+    </element>
+    <element uuid="d9058825-42b3-40be-bc37-0d78a6ae9ad0" manual="true">
+      <element uuid="650cf402-fd7e-48f3-a43f-aa910990b294" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>activity_tracking_data</seg>
+        </bo>
+        <position x="322.0" y="35.0"/>
+      </element>
+      <element uuid="0fc60bf4-0f5b-4206-b5d7-54f7062414f6" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>stepcount_in</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="1b60dd02-aa55-4b41-9595-58cc2d1d8a40" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>user_data</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>thread_calories</seg>
+      </bo>
+      <position x="677.0" y="118.0"/>
+      <size width="485.0" height="110.0"/>
+    </element>
+    <element uuid="dba2f8b7-3133-462d-add4-57f20fc75667" manual="true">
+      <element uuid="a405d2d7-e5b8-4098-8d22-2599270ec821" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>activity_tracking_data</seg>
+        </bo>
+        <position x="335.0" y="10.0"/>
+      </element>
+      <element uuid="1616b6b8-8c38-4e0f-974b-7c577c76cd68" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>heart_rate_sensor_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>thread_heartrate</seg>
+      </bo>
+      <position x="673.0" y="38.0"/>
+      <size width="498.0" height="60.0"/>
+    </element>
+    <element uuid="9a0a73b8-b27c-45be-a925-4632fb961f5b" manual="true">
+      <element uuid="8546ad3c-f03c-4a77-81aa-47404a94eb29" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>activity_tracking_data</seg>
+        </bo>
+        <position x="303.0" y="127.0"/>
+      </element>
+      <element uuid="639ed57f-8d40-42ac-910d-e7167a14aa18" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>altimeter_in</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="532255b1-985d-4024-8fa7-93af5c79b2fe" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>location_in</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="10c74e28-321b-4817-8718-2621c2eae171" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>movement_in</seg>
+        </bo>
+        <position y="160.0"/>
+      </element>
+      <element uuid="0efe51ec-d591-4c7f-80f7-64656a142a09" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>stepcount_out</seg>
+        </bo>
+        <position x="358.0" y="43.0"/>
+      </element>
+      <element uuid="ca731e89-8616-4e41-b104-6980821776f3" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>user_data</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>thread_steps</seg>
+      </bo>
+      <position x="187.0" y="171.0"/>
+      <size width="466.0" height="210.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>activitytrackingsoftware.with_threads</seg>
+    </bo>
+    <position x="12.0" y="12.0"/>
+    <size width="1366.0" height="393.0"/>
+  </element>
   <config type="structure" connectionPrimaryLabelsVisible="false">
     <enabledAadlProperties/>
     <context>

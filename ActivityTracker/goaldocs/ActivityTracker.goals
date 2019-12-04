@@ -6,7 +6,6 @@ stakeholder goals StakeholderGoals : "Activity tracker stakeholder goal set" for
 		stakeholder stakeholders.fitness_enthusiast_1 stakeholders.user_professional_1 stakeholders.activity_ceo stakeholders.fitness_enthusiast_2 stakeholders.user_professional_2
 		category Type.Achieve
 	]
-	
 			goal g1_1: "Display Distance Covered" [
 			description "The distance covered by the user in a day while performing the activities should be displayed"
 			category Type.Maintain
@@ -47,7 +46,6 @@ stakeholder goals StakeholderGoals : "Activity tracker stakeholder goal set" for
 			see goal goaldoc_16.g1_6
 			]
 		
-	
 	
 	goal g2: "Effective monitoring of user activity" [
 		description "The activity tracker should effectively monitor the user's activity."
