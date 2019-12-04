@@ -5,6 +5,7 @@ system requirements UserInterface for ActivityTracker::UserInterface
 	requirement FR_UI1 [
 		description "The user interface shall accept the input values from the user such as age, weight, height and gender." 
 		rationale "The activity tracker is expected to receive the above inputs from the user in order to calculate the activity results of the user. The user should be provided with a placeholder to provide each of these input values respectively."
+ 		see goal goaldoc_22.g2_2_2
  		category Kind.Constraint
 	]
 	requirement FR_UI2 [
@@ -14,11 +15,68 @@ system requirements UserInterface for ActivityTracker::UserInterface
 					•	The value of calories burnt is provided as Display calories burnt. •	The value of heart rate is provided as Display heart rate.
 					•	The value of type of movement type is provided as Display movement type.
 					All the values should be consistent with the desired value type and provided to the user in a readable format."
+ 		see goal goaldoc_22.g2_2_1
  		category Kind.Constraint
 	]
 	requirement FR_UI3 [
 		description "The user interface should have an independent function to pass the values of the input variables to the activity tracker software." 
 		rationale "The input values regarding the user’s personal information needs to be transferred to the activity tracking software. The activity tracking software will combine this information along with the results returned from the the different sensors to calculate the user’s activity."
+ 		see goal goaldoc_22.g2_2_2
  		category Kind.Constraint
+	]
+	
+	//Assumptions	
+	requirement EA_UI_1 [
+		description "All heart rates will be displayed in BPM (beats per minute)." 
+		rationale "BPM is a unit to measure the heart rate of a person. To maintain consistency among all entities in Activity Tracker."
+ 		category Kind.Assumption
+	]
+	
+	requirement EA_UI_2 [
+		description "All ages, heights, weights will be set and displayed by the operators in increments of 1 unit of integer value." 
+		rationale "Marketing studies have shown that customers prefer to set ages, heights and weights in 1 unit of integer value.  A resolution 1 unit is enough to be consistent with the functional and performance requirements specified in the rest of the document."
+ 		category Kind.Assumption
+	]
+	
+	requirement EA_UI_3 [
+		description "The Lower Desired Heart Rate will always be more than 60 BPM." 
+		rationale "Exposure to temperatures less than 60 BPM will result in low blood pressure, which can lead to death within a few minutes for a person with weak immunity."
+ 		category Kind.Assumption
+	]
+	
+	requirement EA_UI_4 [
+		description "The Upper Desired Heart Rate will always be less than 180 BPM." 
+		rationale "Exposing the User to heart rates greater than 170 BPM may result in high blood pressure which may cause many problems such as diabetes, hypertension, organ failure, etc."
+ 		category Kind.Assumption
+	]
+	
+	requirement EA_UI_5 [
+		description "The Display Steps will cover the range of at least 0 to 999999999 steps." 
+		rationale "This is the specified range for the count of the steps that a user can cover in 1 day."
+ 		category Kind.Assumption
+	]
+	
+	requirement EA_UI_6 [
+		description "The Display display will display the distance covered by a user in the range of 0 - 1000 miles." 
+		rationale "This is the specified range for the distance that a user can cover by doing any type of physical activity in 1 day."
+ 		category Kind.Assumption
+	]
+	
+	requirement EA_UI_7 [
+		description "The Display time will display the time in the range 00-00 to 12-12 hour: minutes." 
+		rationale "The time is displayed by the activity tracker in 12-hour format."
+ 		category Kind.Assumption
+	]
+	
+	requirement EA_UI_8 [
+		description "The display calories will display the calories burnt by user in the range of 0 to 1000kCal." 
+		rationale "This is the range of the calories that can be burnt by the user by performing different activities in a day."
+ 		category Kind.Assumption
+	]
+	
+	requirement EA_UI_9 [
+		description "The display movement type displays the type of the user’s movement for the activities as W, R, S or C." 
+		rationale "The user is expected to perform different types of activities as W is for Walking, R is for Running, C is for Climbing and S is for Standing still."
+ 		category Kind.Assumption
 	]
 ]

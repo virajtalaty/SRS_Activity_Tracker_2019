@@ -6,6 +6,7 @@ system requirements ActivityTrackingSoftware for ActivityTracker::ActivityTracki
 		rationale "When the user is traveling from point A to point B the GPS will capture the value of the user’s location. 
 					The activity tracker software will read these values from the GPS every second to be used for calculating 
 					various results."
+ 		see goal goaldoc_11.g1_1_1
  		category Kind.Constraint
 	]
 	requirement REQ_CDTV_2 [
@@ -13,6 +14,7 @@ system requirements ActivityTrackingSoftware for ActivityTracker::ActivityTracki
 		rationale "The accelerometer state is used to detect whether the person wearing the device is actually moving or not.
 					When the user wearing the device is moving in a vehicle the accelerometer will not have any values which helps 
 					us to detect that the user is not actually moving."
+		see goal goaldoc_11.g1_1_1
  		category Kind.Constraint
 	]
 	requirement REQ_CDTV_3 [
@@ -36,27 +38,35 @@ system requirements ActivityTrackingSoftware for ActivityTracker::ActivityTracki
 	requirement REQ_CTMF_1 [
 		description "Classify type of Movement function shall read the state of the accelerometer." 
 		rationale "The accelerometer state is used to detect whether the person wearing the device is actually moving or not. 
-					When the user wearing the device is moving in a vehicle the accelerometer will not have any values which helps us to detect that the user is not actually moving."
+					When the user wearing the device is moving in a vehicle the accelerometer will not have any values which helps us 
+					to detect that the user is not actually moving."
  		category Kind.Constraint
 	]
 	requirement REQ_CTMF_2 [
 		description "Classify type of Movement function shall read the intensity of the accelerometer." 
-		rationale "The accelerometer movement intensity is used to detect the intensity with which the user is performing the activity. High intensity will help us to detect that the user is running while low will suggest that the user is walking."
+		rationale "The accelerometer movement intensity is used to detect the intensity with which the user is performing the activity. High intensity 
+				will help us to detect that the user is running while low will suggest that the user is walking."
+		see goal goaldoc_12.g1_2_1_2
  		category Kind.Constraint
 	]
 	requirement REQ_CTMF_3 [
 		description "Classify type of Movement function shall read the state of the altimeter." 
-		rationale "The altimeter state is used to detect whether the person wearing the device is moving on a straight surface or moving upwards and climbing steps. The altimeter state will be used to differentiate between climbing and walking/running."
+		rationale "The altimeter state is used to detect whether the person wearing the device is moving on a straight surface or moving upwards and 
+			climbing steps. The altimeter state will be used to differentiate between climbing and walking/running."
+		see goal goaldoc_12.g1_2_1_2
  		category Kind.Constraint
 	]
 	requirement REQ_CTMF_4 [
 		description "Calculate the type of movement action." 
-		rationale "The activity tracker software will make use of the accelerometer state and intensity along with altimeter state to calculate and decide the type of user movement from walking, standing and running."
+		rationale "The activity tracker software will make use of the accelerometer state and intensity along with altimeter state to calculate and decide 
+				the type of user movement from walking, standing and running."
+		see goal goaldoc_12.g1_2_1_2
  		category Kind.Constraint
 	]
 	requirement REQ_CTMF_5 [
 		description "The classify type of movement function shall provide the type of user movement detected value to the user interface to display the information." 
 		rationale "The result of user movement type will be transferred to the user interface."
+		see goal goaldoc_12.g1_2
  		category Kind.Constraint
 	]
 	
@@ -64,54 +74,72 @@ system requirements ActivityTrackingSoftware for ActivityTracker::ActivityTracki
 	// Functional Requirement to Calculate Step Count
 	requirement REQ_CSCF_1 [
 		description "Calculate steps count function shall read the values of height, weight and gender." 
-		rationale "The count steps function would require the personal information such height, weight and sex of the user to determine the step size while performing the activity. It may be different for the people with different values of heights, weights and gender."
+		rationale "The count steps function would require the personal information such height, weight and sex of the user to determine the step size while performing 
+				the activity. It may be different for the people with different values of heights, weights and gender."
+		see goal goaldoc_13.g1_3_1
  		category Kind.Constraint
 	]
 	requirement REQ_CSCF_2 [
 		description "Calculate steps count function shall read the movement type (i.e. walking, running, climbing) captured by the classification type of movement function." 
-		rationale "For deriving the correct step count, the type of activity is important as a person might have different step sizes while doing different activities such as walking, running or climbing."
+		rationale "For deriving the correct step count, the type of activity is important as a person might have different step sizes while doing different activities 
+			such as walking, running or climbing."
+		see goal goaldoc_13.g1_3_1
  		category Kind.Constraint
 	]
 	requirement REQ_CSCF_3 [
 		description "Calculate steps count function shall read the distance travelled value which is calculated from the distance travelled function." 
 		rationale "The total distance travelled is another parameter necessary for calculating steps count for an activity."
+		see goal goaldoc_13.g1_3_1
  		category Kind.Constraint
 	]
 	requirement REQ_CSCF_4 [
 		description "The calculate steps count function shall perform mathematical calculation to generate the value of steps count." 
-		rationale "The activity tracker software will have the values from the user personal information, distance travelled function and the movement type function. This information will be used to perform mathematical calculation to deduce how many steps the user has taken till that point of the day."
+		rationale "The activity tracker software will have the values from the user personal information, distance travelled function and the movement type function. 
+			This information will be used to perform mathematical calculation to deduce how many steps the user has taken till that point of the day."
+ 		see goal goaldoc_13.g1_3_1
  		category Kind.Constraint
 	]
 	requirement REQ_CSCF_5 [
 		description "The calculated steps count function shall provide the result to the user interface to display the information." 
 		rationale "The consolidated result of how many steps taken by the user will be transferred to the user interface."
+		see goal goaldoc_13.g1_3
  		category Kind.Constraint
 	]
 	
 	// Functional Requirement to Calculate Calorie Burnt
 	requirement REQ_CCBR_1 [
 		description "Calculate calorie burnt function shall read the movement type (i.e. walking, running, climbing) captured by the classification type of movement function." 
-		rationale "For deriving the correct calorie burnt, the type of activity the person is performing is important as different activities such as walking, running or climbing will result in different calorie burn."
+		rationale "For deriving the correct calorie burnt, the type of activity the person is performing is important as different activities such as walking, 
+			running or climbing will result in different calorie burn."
+		see goal goaldoc_12.g1_2_1
  		category Kind.Constraint
 	]
 	requirement REQ_CCBR_2 [
 		description "Calculate calorie burnt function shall read the values from the GPS." 
-		rationale "When the user is travelling from point A to point B the GPS will capture the value of the user’s location. The activity tracker software will read these values from the GPS every second to be used for calculating various results."
+		rationale "When the user is travelling from point A to point B the GPS will capture the value of the user’s location. The activity tracker software will 
+				read these values from the GPS every second to be used for calculating various results."
+		see goal goaldoc_12.g1_2_1
  		category Kind.Constraint
 	]
 	requirement REQ_CCBR_3 [
 		description "The calculate calorie burnt function shall read user personal information." 
-		rationale "The user personal information on height, weight, age and gender will be read by the Activity tracer software. This information is needed by the software to generate results for various calculations."
+		rationale "The user personal information on height, weight, age and gender will be read by the Activity tracer software. This information is needed by
+			 the software to generate results for various calculations."
+		see goal goaldoc_12.g1_2_1
  		category Kind.Constraint
 	]
 	requirement REQ_CCBR_4 [
 		description "The calculate calorie burnt function shall perform mathematical calculation to generate the value of calories burnt." 
-		rationale "The activity tracker software will have the values from the activity type, GPS and user personal information. This information will be used to perform mathematical calculation to deduce how much calories the user has burnt. The result of the calories burnt will be added to the previous values of the calorie burnt to show the user the consolidated value of how much calorie the user has burnt in a day."
+		rationale "The activity tracker software will have the values from the activity type, GPS and user personal information. This information will be used to perform mathematical 
+			calculation to deduce how much calories the user has burnt. The result of the calories burnt will be added to the previous values of the calorie burnt to show the user the 
+			consolidated value of how much calorie the user has burnt in a day."
+		see goal goaldoc_12.g1_2_1
  		category Kind.Constraint
 	]
 	requirement REQ_CCBR_5 [
 		description "The calculated calorie burnt function shall provide these values to the user interface to display the information." 
 		rationale "The consolidated result of how many calories the user has burnt will be transferred to the user interface."
+ 		see goal goaldoc_12.g1_2
  		category Kind.Constraint
 	]
 	
@@ -119,21 +147,27 @@ system requirements ActivityTrackingSoftware for ActivityTracker::ActivityTracki
 	requirement REQ_MHRF_1 [
 		description "The monitor heart rate function shall read the heart rate value from the heart rate sensor." 
 		rationale "The heart rate sensor will sense the heart rate in BPM from the pulse rate of the user and pass it to this function."
+ 		see goal goaldoc_16.g1_6_1
  		category Kind.Constraint
 	]
 	requirement REQ_MHRF_2 [
 		description "The heart rate sensor shall pass the heart rate value to the Manage Heart Rate Notification Function." 
 		rationale "The heart rate sensor will have to send the value of the heartbeat to the manage heart rate notification function to know whether the given heart rate is within the desired heart rate range."
+ 		see goal goaldoc_16.g1_6_1
  		category Kind.Constraint
 	]
 	requirement REQ_MHRF_3 [
 		description "The heart rate sensor shall display the value of the heart rate on the user interface." 
 		rationale "The Activity Tracker Software will always send the current heart rate value to the user interface."
+ 		see goal goaldoc_16.g1_6
  		category Kind.Constraint
 	]
 	requirement REQ_MHRF_4 [
-		description "The Activity Tracker Software shall notify the user for a cautious heart rate which is out of the desired heart range if the value of the heart rate status is found True given by the Manage Heart Rate Function." 
-		rationale "The Activity Tracker needs the check and notify the user if the value of the heart rate is out of the desired heart range. The Manage Heart Rate Function checks that and returns a Boolean value from which the Activity Tracker Software can send a notification to the user for a caution in heart rate value."
+		description "The Activity Tracker Software shall notify the user for a cautious heart rate which is out of the desired heart range if the value of the heart rate status 
+			is found True given by the Manage Heart Rate Function." 
+		rationale "The Activity Tracker needs the check and notify the user if the value of the heart rate is out of the desired heart range. The Manage Heart Rate Function checks 
+			that and returns a Boolean value from which the Activity Tracker Software can send a notification to the user for a caution in heart rate value."
+ 		see goal goaldoc_21.g2_1_1
  		category Kind.Constraint
 	]
 	
@@ -141,12 +175,33 @@ system requirements ActivityTrackingSoftware for ActivityTracker::ActivityTracki
 	requirement REQ_MHNF_1 [
 		description "Setting the heart rate notification value to false." 
 		rationale "If the monitor heart value is in the desired range of lower heart beat rate range i.e. 60BMP - 5BMP and upper heart beat rate i.e 170 BPM + 5BMP then set the Heart Rate Status variable value as false."
+ 		see goal goaldoc_21.g2_1_1
  		category Kind.Constraint
 	]
 	requirement REQ_MHNF_2 [
 		description "Setting the heart rate notification value to true." 
 		rationale "If the monitor heart rate value goes below the lower heartbeat rate 60BPM or above the upper heartbeat rate 170BPM then set the Heart Rate Status variable values as true."
+ 		see goal goaldoc_21.g2_1_1
  		category Kind.Constraint
 	]
 	
+	//Assumption
+	
+	requirement EA_ATS_1 [
+		description "The software will receive the correct acceleration information from the accelerometer measured in terms of force." 
+		rationale "Consistency with accelerometer assumption EA-A1."
+ 		category Kind.Assumption
+	]
+	
+	requirement EA_ATS_2 [
+		description "The software will receive the correct location information from the GPS measured in terms of DMS for the latitude and the longitude." 
+		rationale "Consistency with GPS assumption EA-GPS-1."
+ 		category Kind.Assumption
+	]
+	
+	requirement EA_ATS_3 [
+		description "The software will receive the correct altitude information from the altimeter measured in terms of feet." 
+		rationale "Consistency with altimeter assumption EA-ALT-1."
+ 		category Kind.Assumption
+	]
 ]

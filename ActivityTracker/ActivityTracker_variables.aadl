@@ -2,13 +2,12 @@
 
 --data components used to type data connections in isolette model
 
-
 package ActivityTracker_variables
   public
 	with Data_Model;
 	with Activity_Tracker_Properties;
 
---Table 1 Accelerometer Monitored Variable
+--Accelerometer Monitored Variable
 	data measured_acceleration
 		properties
 			Data_Model::Real_Range => 68.0 .. 105.0;
@@ -22,5 +21,34 @@ package ActivityTracker_variables
 			Data_Model::Measurement_Unit => "Gravitational Force";
 			Activity_Tracker_Properties::Acceleration_Accuracy => 0.1 GravitationalForce;
 	end display_acceleration;
+	
+	--Heart Rate Monitored Variable
+	data measured_heartrate
+		properties
+			Data_Model::Integer_Range => 40 .. 220;
+			Data_Model::Measurement_Unit => "Beats Per Minute";
+			Activity_Tracker_Properties::HeartRate_Accuracy => 1 BeatsPerMinute;
+	end measured_heartrate;
+	
+	data display_heartrate
+		properties
+			Data_Model::Integer_Range => 40 .. 220;
+			Data_Model::Measurement_Unit => "Beats Per Minute";
+			Activity_Tracker_Properties::HeartRate_Accuracy => 1 BeatsPerMinute;
+	end display_heartrate;
+	
+	data measured_altitude
+		properties
+			Data_Model::Real_Range => 4000.0 .. 30000.0;
+			Data_Model::Measurement_Unit => "Feet";
+			Activity_Tracker_Properties::Altitude_Accuracy => 0.1 Feet;
+	end measured_altitude;
+	
+	data display_altitude
+		properties
+			Data_Model::Real_Range => 4000.0 .. 30000.0;
+			Data_Model::Measurement_Unit => "Feet";
+			Activity_Tracker_Properties::Altitude_Accuracy => 0.1 Feet;
+	end display_altitude;
 	
 end ActivityTracker_variables;  

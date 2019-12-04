@@ -1,0 +1,24 @@
+system requirements HeartRateSensor for ActivityTracker::HeartRateSensor 
+[
+	requirement EA_HRS_1 [
+		description "The Current Heart Rate will be provided to the Activity Tracker Software in BPM (beats per minute)." 
+		rationale "Consistency with environmental assumption User Interface EA-UI-1."
+ 		category Kind.Assumption
+	]
+	requirement EA_HRS_2 [
+		val SensedHeartRate = [ 40 .. 220]
+		description "The Current Heart Rate will be sensed to an accuracy of ± 0.1 BPM." 
+		rationale " An accuracy of 0.1 BPM is necessary to ensure the Activity Tracker Software can later pass the desired heart rate value to the user interface."
+ 		category Kind.Assumption
+ 		value predicate #Data_Model::Real_Range == SensedHeartRate
+	]
+	requirement EA_HRS_3 [
+		val HeartBeatRate = 1 BeatsPerMinute
+		description "The Current Heart Rate will cover the range of at least 40 BPM to 220 BPM." 
+		rationale "This is the specified range of heart rate shown by the heart rate sensor. 
+					This range covers a wide range of heart rates which can be found in all age ranges. 
+					The lower end of this range is useful for monitoring the heart rate lower than the desired lowest normal heart. 
+					The upper end is greater than the highest normal heart rate to ensure that the current heart rate will be sensed across the entire normal heart rate range."
+ 		category Kind.Assumption
+	]
+]

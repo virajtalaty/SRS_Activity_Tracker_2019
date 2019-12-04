@@ -1,0 +1,13 @@
+system requirements GPS for ActivityTracker::GPS 
+[
+	requirement EA_GPS_1 [
+		description "The current location will be provided to the Activity Tracker Software in degrees, minutes and seconds format (DMS)." 
+		rationale "This is the universal format for recording the location in a GPS, the Latitude will have range from +90° denoting the north pole to equator to denoting south pole and similarly Longitude will have range from -180' to +180'."
+ 		category Kind.Assumption
+	]
+	requirement EA_GPS_2 [
+		description "The GPS location will be sensed to an accuracy of ±0.1'' second." 
+		rationale "An accuracy of 0.1'' second is necessary to ensure the correct location of the person wearing the device to measure the distance travelled when needed."
+ 		category Kind.Assumption
+	]
+]
