@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
-  <element uuid="afa2fb96-2ec7-4dfc-b600-88d1cb803c2d" manual="true">
-    <element uuid="e76aec67-419f-4ec5-bcbe-140cd246b286" manual="true">
-      <element uuid="09c9fcee-d10c-4933-a514-209e18bb3156" manual="true">
+  <element uuid="091b1022-01d8-4fa7-81bf-57cb2eb52e4f" manual="true">
+    <element uuid="02373b0d-fbdb-4a44-94f3-1fb80e181b5f" manual="true">
+      <element uuid="5c26a54f-e158-451f-bed5-4d45c0c4daf2" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -13,8 +13,8 @@
         <seg>calorieactivity_thread_conn</seg>
       </bo>
     </element>
-    <element uuid="0b812248-8264-466e-9afb-81dd7d97ddf1" manual="true">
-      <element uuid="71749b4c-a005-40cf-88d3-4b8656f16b14" manual="true">
+    <element uuid="ca21de84-ef83-4621-9440-d5869d3ba378" manual="true">
+      <element uuid="15d19619-34fc-48b7-b713-e612cb2395c3" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -25,12 +25,12 @@
         <seg>caloriestep_thread_conn</seg>
       </bo>
       <bendpoints>
-        <point x="675.0" y="258.33333333333337"/>
-        <point x="675.0" y="222.0"/>
+        <point x="803.0" y="256.33333333333337"/>
+        <point x="803.0" y="220.0"/>
       </bendpoints>
     </element>
-    <element uuid="f9d57d52-58e7-4be0-a5a3-960d41da23d2" manual="true">
-      <element uuid="f1d2adc6-3441-4cf3-b91f-7079145dd138" manual="true">
+    <element uuid="e61d4c7d-32b8-482b-8bb1-392d268b3f84" manual="true">
+      <element uuid="f0b73700-dd5d-47ec-99e0-354b18f2d878" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -41,8 +41,8 @@
         <seg>caloriesuserinfo_thread_conn</seg>
       </bo>
     </element>
-    <element uuid="0dd1e0ee-a76e-49dc-a27d-28ebf72a7631" manual="true">
-      <element uuid="59701c37-a308-4cae-a920-4879143cc71c" manual="true">
+    <element uuid="b45a88dc-7099-46e8-bd28-52dfa8f313a0" manual="true">
+      <element uuid="ec4fc6d7-1628-4455-9a09-4bb12d1821c2" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -53,8 +53,8 @@
         <seg>heartrate_thread_conn</seg>
       </bo>
     </element>
-    <element uuid="7cc9d6e3-4425-4270-b82d-09466e4fa351" manual="true">
-      <element uuid="9a88b48b-ed01-4fa1-b596-b0b7ac65939d" manual="true">
+    <element uuid="496e50d1-2f6d-4f11-aecd-c2a82e7f3b32" manual="true">
+      <element uuid="6f449974-b4ce-49c4-9160-09d618b608aa" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -65,12 +65,12 @@
         <seg>heartrateactivity_thread_conn</seg>
       </bo>
       <bendpoints>
-        <point x="1193.0" y="92.0"/>
-        <point x="1193.0" y="197.0"/>
+        <point x="1321.0" y="90.0"/>
+        <point x="1321.0" y="195.0"/>
       </bendpoints>
     </element>
-    <element uuid="7e46fd85-2599-47c4-878b-7b52d4d2e806" manual="true">
-      <element uuid="be14abf0-02e2-4880-a547-50ca6fe0c49c" manual="true">
+    <element uuid="af401032-ec1f-4051-b9f2-dcb1b5d066f1" manual="true">
+      <element uuid="5e69ca35-8f3a-49a4-b319-0888ad29c0e7" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -81,12 +81,12 @@
         <seg>stepactivity_thread_conn</seg>
       </bo>
       <bendpoints>
-        <point x="1193.0" y="341.6666666666667"/>
-        <point x="1193.0" y="197.0"/>
+        <point x="1321.0" y="339.6666666666667"/>
+        <point x="1321.0" y="195.0"/>
       </bendpoints>
     </element>
-    <element uuid="08000408-ace2-49ec-8ab0-c8f27c55a358" manual="true">
-      <element uuid="4ca28548-2ae4-41f8-95f9-7caeda548529" manual="true">
+    <element uuid="e5d04693-3252-434c-9b1d-86f8856f4680" manual="true">
+      <element uuid="78a51c45-12e6-48f7-896d-3a9fb4f2bb06" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -97,8 +97,8 @@
         <seg>stepaltitude_thread_conn</seg>
       </bo>
     </element>
-    <element uuid="d65271bb-9c24-4ad8-a287-09c576bb0e9e" manual="true">
-      <element uuid="f79a9ce5-181c-4a42-9dde-638f6e4250e8" manual="true">
+    <element uuid="0435197b-b7df-4cd9-b7b9-59b19f70381f" manual="true">
+      <element uuid="89083bb9-2f5a-44b9-8d97-e7c2f4226d09" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -109,8 +109,8 @@
         <seg>steplocation_thread_conn</seg>
       </bo>
     </element>
-    <element uuid="efd81bfe-0cd3-45ed-9b39-5a9ff1dc7196" manual="true">
-      <element uuid="3d7ccac6-2812-41d4-8b27-5cb839637488" manual="true">
+    <element uuid="0328031a-fa85-4f7e-92cd-14757b045ab4" manual="true">
+      <element uuid="55aa3a95-a055-42c5-a959-1e76880d7470" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -121,8 +121,8 @@
         <seg>stepmovement_thread_conn</seg>
       </bo>
     </element>
-    <element uuid="a55bf5da-0f75-4e27-9a6b-eb368e1a79af" manual="true">
-      <element uuid="c144a3ed-32b0-4bc9-a77e-aa3c059f7d39" manual="true">
+    <element uuid="2543c50e-aa5f-4f46-a578-e79ff1d1daf1" manual="true">
+      <element uuid="acaf664f-6641-4082-a474-d3c570d8c924" manual="true">
         <bo>
           <seg>tag</seg>
           <seg>unidirectional</seg>
@@ -133,68 +133,68 @@
         <seg>stepuserinfo_thread_conn</seg>
       </bo>
       <bendpoints>
-        <point x="189.0" y="172.0"/>
-        <point x="189.0" y="225.0"/>
+        <point x="317.0" y="170.0"/>
+        <point x="317.0" y="223.0"/>
       </bendpoints>
     </element>
-    <element uuid="83cb5729-0167-48db-93a5-975544c83048" manual="true" dockArea="right">
+    <element uuid="bd8a91d8-3568-40a4-9053-061be824ec7f" manual="true" dockArea="right">
       <bo>
         <seg>feature</seg>
         <seg>activity_tracking_data</seg>
       </bo>
-      <position x="1203.0" y="153.0"/>
+      <position x="1078.0" y="153.0"/>
     </element>
-    <element uuid="9cfdef86-b9ec-4805-ae51-cf95995ada3d" manual="true" dockArea="left">
+    <element uuid="877c669f-d164-4bda-b6a9-5c1ba4d0f82b" manual="true" dockArea="left">
       <bo>
         <seg>feature</seg>
         <seg>altimeter_in</seg>
       </bo>
       <position y="231.0"/>
     </element>
-    <element uuid="0e02785b-886c-4f85-aa42-ae3a846bdcf5" manual="true" dockArea="left">
+    <element uuid="b50438d7-6e6a-45bf-9e72-668f6331b6be" manual="true" dockArea="left">
       <bo>
         <seg>feature</seg>
         <seg>heart_rate_sensor_in</seg>
       </bo>
       <position y="48.0"/>
     </element>
-    <element uuid="5a3382bc-40a7-40cc-8e8b-987ea97bd474" manual="true" dockArea="left">
+    <element uuid="d9693771-eb37-493a-ac33-336583cb0cc4" manual="true" dockArea="left">
       <bo>
         <seg>feature</seg>
         <seg>location_in</seg>
       </bo>
       <position y="281.0"/>
     </element>
-    <element uuid="98c88776-6c0d-470e-9608-b4efaa4a0e5b" manual="true" dockArea="left">
+    <element uuid="28997203-d452-46c3-b597-06ce6f026451" manual="true" dockArea="left">
       <bo>
         <seg>feature</seg>
         <seg>movement_in</seg>
       </bo>
       <position y="331.0"/>
     </element>
-    <element uuid="5115fdff-9d75-4687-9f0d-7618265d6bf7" manual="true" dockArea="left">
+    <element uuid="ccb81987-73c6-4c0a-9f6a-c10ff23bd303" manual="true" dockArea="left">
       <bo>
         <seg>feature</seg>
         <seg>user_data</seg>
       </bo>
       <position y="128.0"/>
     </element>
-    <element uuid="d9058825-42b3-40be-bc37-0d78a6ae9ad0" manual="true">
-      <element uuid="650cf402-fd7e-48f3-a43f-aa910990b294" manual="true" dockArea="right">
+    <element uuid="2dddab2b-dd5c-4182-8923-3a5135a353fc" manual="true">
+      <element uuid="cb7b4f23-f2b1-4daa-9032-4c5e58af1098" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>activity_tracking_data</seg>
         </bo>
-        <position x="322.0" y="35.0"/>
+        <position x="269.0" y="35.0"/>
       </element>
-      <element uuid="0fc60bf4-0f5b-4206-b5d7-54f7062414f6" manual="true" dockArea="left">
+      <element uuid="3a5b35a8-e748-4449-a1d6-2747b66a0095" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>stepcount_in</seg>
         </bo>
         <position y="60.0"/>
       </element>
-      <element uuid="1b60dd02-aa55-4b41-9595-58cc2d1d8a40" manual="true" dockArea="left">
+      <element uuid="88d89456-3457-47e2-b1cd-c254c07bb97f" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>user_data</seg>
@@ -206,17 +206,17 @@
         <seg>thread_calories</seg>
       </bo>
       <position x="677.0" y="118.0"/>
-      <size width="485.0" height="110.0"/>
+      <size width="432.0" height="100.0"/>
     </element>
-    <element uuid="dba2f8b7-3133-462d-add4-57f20fc75667" manual="true">
-      <element uuid="a405d2d7-e5b8-4098-8d22-2599270ec821" manual="true" dockArea="right">
+    <element uuid="fe053344-5108-45e0-8ecd-835b33ca99e4" manual="true">
+      <element uuid="2f570e72-b913-4737-b615-bf2a75a37c2b" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>activity_tracking_data</seg>
         </bo>
-        <position x="335.0" y="10.0"/>
+        <position x="303.0" y="10.0"/>
       </element>
-      <element uuid="1616b6b8-8c38-4e0f-974b-7c577c76cd68" manual="true" dockArea="left">
+      <element uuid="efd7ca90-e952-4b00-b504-69cb89aacac9" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>heart_rate_sensor_in</seg>
@@ -227,46 +227,46 @@
         <seg>subcomponent</seg>
         <seg>thread_heartrate</seg>
       </bo>
-      <position x="673.0" y="38.0"/>
-      <size width="498.0" height="60.0"/>
+      <position x="673.0" y="48.0"/>
+      <size width="466.0" height="50.0"/>
     </element>
-    <element uuid="9a0a73b8-b27c-45be-a925-4632fb961f5b" manual="true">
-      <element uuid="8546ad3c-f03c-4a77-81aa-47404a94eb29" manual="true" dockArea="right">
+    <element uuid="6b58c4df-8227-4bdb-996b-dcd06246f5e4" manual="true">
+      <element uuid="736da598-10fa-4c2b-ace1-c812611d6ddb" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>activity_tracking_data</seg>
         </bo>
-        <position x="303.0" y="127.0"/>
+        <position x="239.0" y="127.0"/>
       </element>
-      <element uuid="639ed57f-8d40-42ac-910d-e7167a14aa18" manual="true" dockArea="left">
+      <element uuid="4d32e7d4-ca33-4520-8912-1c70f57137f6" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>altimeter_in</seg>
         </bo>
         <position y="60.0"/>
       </element>
-      <element uuid="532255b1-985d-4024-8fa7-93af5c79b2fe" manual="true" dockArea="left">
+      <element uuid="3f4c0bf6-8dbe-4239-baa2-375d1b1b4415" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>location_in</seg>
         </bo>
         <position y="110.0"/>
       </element>
-      <element uuid="10c74e28-321b-4817-8718-2621c2eae171" manual="true" dockArea="left">
+      <element uuid="4692835a-fea7-4427-9a94-bb00c81c0403" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>movement_in</seg>
         </bo>
         <position y="160.0"/>
       </element>
-      <element uuid="0efe51ec-d591-4c7f-80f7-64656a142a09" manual="true" dockArea="right">
+      <element uuid="a51de9a3-d435-420b-89cc-a1d225dc8945" manual="true" dockArea="right">
         <bo>
           <seg>feature</seg>
           <seg>stepcount_out</seg>
         </bo>
-        <position x="358.0" y="43.0"/>
+        <position x="294.0" y="43.0"/>
       </element>
-      <element uuid="ca731e89-8616-4e41-b104-6980821776f3" manual="true" dockArea="left">
+      <element uuid="a9024aef-c3b1-48e7-9f34-f4d8b84d6395" manual="true" dockArea="left">
         <bo>
           <seg>feature</seg>
           <seg>user_data</seg>
@@ -278,14 +278,14 @@
         <seg>thread_steps</seg>
       </bo>
       <position x="187.0" y="171.0"/>
-      <size width="466.0" height="210.0"/>
+      <size width="402.0" height="200.0"/>
     </element>
     <bo>
       <seg>classifier</seg>
       <seg>activitytrackingsoftware.with_threads</seg>
     </bo>
-    <position x="12.0" y="12.0"/>
-    <size width="1366.0" height="393.0"/>
+    <position x="140.0" y="10.0"/>
+    <size width="1241.0" height="431.0"/>
   </element>
   <config type="structure" connectionPrimaryLabelsVisible="false">
     <enabledAadlProperties/>
