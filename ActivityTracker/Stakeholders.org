@@ -6,21 +6,21 @@ stakeholder activity_ceo [
 	description "Kurt is the CEO of the Activity Tracker."
 	email "kurt@activitytracker.com"
 ]
-stakeholder engineer_electical [
+stakeholder electrical_engineer [
 	full name "Fern Rodriguez"
 	title "Senior Electrical Engineer"
 	description "Fern is an electrical engineer."
 	email "fern@activitytracker.com"
 	supervisor activity_ceo
 ]
-stakeholder thermal_electical [
+stakeholder thermal_engineer [
 	full name "Zara Thomas"
 	title "Senior thermal Engineer"
 	description "Zara is an thermal engineer."
 	email "zara@activitytracker.com"
 	supervisor activity_ceo
 ]
-stakeholder software_electical [
+stakeholder software_engineer [
 	full name "Jonah Cruz"
 	title "Senior Software Engineer"
 	description "Jonah is an software engineer."

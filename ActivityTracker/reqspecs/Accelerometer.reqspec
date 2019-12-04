@@ -1,21 +1,24 @@
 system requirements Accelerometer for ActivityTracker::Accelerometer 
-use constants activityTrackerConstant [
+[
 	requirement EA_A1 [
-		description "The value provided by the accelerometer will be measured in terms of  Force(g)." 
+		description "The value provided by the accelerometer will be measured in terms of Force(g)." 
 		rationale "The acceleration is measured in meters per second square and converted into force(g). 1g = 9.81m/s2."
  		category Kind.Assumption
 	]
 	requirement EA_A2 [
 		val SensedAccelerationRange = [ 1.0 .. 250.0]
-		description "The acceleration captured the accelerometer is only due to the physical or the mechanical forces received due to movement or vibrations." 
-		rationale "Based on the forces received the accelerometer determines the type movement  and the intensity of movement such as walking, running, standing still."
+		description "The acceleration captured the accelerometer is only due to the physical or the mechanical 
+					forces received due to movement or vibrations." 
+		rationale "Based on the forces received the accelerometer determines the type movement  and the intensity of 
+					movement such as walking, running, standing still."
  		category Kind.Assumption
  		value predicate #Data_Model::Real_Range == SensedAccelerationRange
 	]
 	requirement EA_A3 [
-		val AccelerationRate = 0.2 GravitationalForce
-		description "The acceleration is sensed with an accuracy of ± 2" accelerometerMeasurement "." 
-		rationale "An accuracy of ± 2g is necessary to ensure that the user’s movement is captured correctly as this will be needed to calculate the steps count of the users"
+		val AccelerationRate = 0.1 GravitationalForce
+		description "The acceleration is sensed with an accuracy of ± 2 Force (g)." 
+		rationale "An accuracy of ± 2g is necessary to ensure that the user’s movement is captured correctly as 
+					this will be needed to calculate the steps count of the users"
  		category Kind.Assumption
 	]
 ]

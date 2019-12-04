@@ -1,0 +1,33 @@
+system requirements ActivityTracker for ActivityTracker::ActivityTracker.with_devices 
+[
+	requirement NF_SR_1 [
+		description "The material used to make the activity tracker should be so that it is able to absorb vibration and shocks." 
+		rationale "The EN (European Standards) standards are the safety standards globally accepted. They defined the safety guidelines and suggest designs. The activity tracker should be designed as per the specified standards."
+ 		see goal goaldoc_23.g2_3_2
+ 		category Kind.Safety
+	]
+	requirement EA_A2 [
+		description "The activity tracker should implement thermal simulation. The heat flow should be directed away from the skin. The components should operate below maximum temperature range which is 107F." 
+		rationale "Thermal simulation software function defines the internal layout of the components such that it improves the heat flow. The components are arranged in grid cells such that heat flow is regulated and hot spots are identified."
+ 		see goal goaldoc_23.g2_3
+ 		category Kind.Safety
+	]
+	requirement EA_A3 [
+		description "The activity tracker should stop if the device gets overheated." 
+		rationale "The device can get overheated due to reasons unknown but the user’s safety is the utmost priority so to keep the user safe we need to make sure the activity tracker stops when device gets overheated."
+ 		see goal goaldoc_23.g2_3_1
+ 		category Kind.Safety
+	]
+	
+	//Environmental Assumptions
+	requirement EA_ATW_1 [
+		description "The device will be worn by the user on the wrist for all the functionality of the device to work correctly." 
+		rationale "All the functionalities of the device are calibrated to work when the user wears the device around their wrists."
+ 		category Kind.Assumption
+	]
+	requirement EA_ATW_2 [
+		description "The device is water resistant." 
+		rationale "The device is made to be waterproof so that the device can work perfectly fine in various weather conditions."
+ 		category Kind.Assumption
+	]
+]

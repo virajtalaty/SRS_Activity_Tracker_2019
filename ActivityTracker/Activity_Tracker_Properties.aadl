@@ -1,3 +1,15 @@
 property set Activity_Tracker_Properties is
-	Accelerometer_Change_Rate_Units: type units (GravitationalForce);
+	Accelerometer_Units: type units (GravitationalForce); -- G
+	Acceleration_Value: type aadlreal units Activity_Tracker_Properties::Accelerometer_Units; --<Number> G
+	
+	HeartRate_Units: type units (BeatsPerMinute);
+	HeartRate_Value: type aadlinteger units Activity_Tracker_Properties::HeartRate_Units;	
+	
+	Altitude_Units: type units (Feet);
+	Altitude_Value: type aadlreal units Activity_Tracker_Properties::Altitude_Units;	
+	
+	Acceleration_Accuracy: Activity_Tracker_Properties::Acceleration_Value applies to (all); --0.1 G
+	HeartRate_Accuracy: Activity_Tracker_Properties::HeartRate_Value applies to (all);
+	Altitude_Accuracy: Activity_Tracker_Properties::Altitude_Value applies to (all);
+	
 end Activity_Tracker_Properties;

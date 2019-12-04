@@ -1,0 +1,15 @@
+system requirements Altimeter for ActivityTracker::Altimeter 
+[
+	requirement EA_ALT_1 [
+		description "The Current altitude will be provided to the Activity Tracker Software in feet." 
+		rationale "Will be used to calculated whether the user is climbing or walking."
+ 		category Kind.Assumption
+	]
+	requirement EA_A2 [
+		val SensedAltitudeRange = [ -4000.0 .. 30000.0]
+		description "The altitude will be sensed to an accuracy of ±0.1Feet." 
+		rationale "An accuracy of 0.1 Feet is necessary to ensure the correct altitude of the person wearing the device. This information is needed to measure the stairs climbed by the user."
+ 		category Kind.Assumption
+ 		value predicate #Data_Model::Real_Range == SensedAltitudeRange
+	]
+]
